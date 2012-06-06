@@ -2,11 +2,5 @@
   "name": "Backbone-login",
   "version": "0.6.17",
   "dependencies": {
-    "express": "2.5.9",
-    "couchdb-api": "1.1.4",
-    "request": "2.9.202",
-    "moment": "1.6.2",
-    "jasmine-node": "1.0.26",
-    "mustache": "0.4.0"
   }
 }
