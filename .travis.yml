@@ -1,6 +1,12 @@
 language: node_js
+
 node_js:
   - 0.6
+
 before_script:
-  - npm install
+  - npm install --dev
+
 script: jasmine-node api-node/spec
+
+notifications:
+  irc: "irc.freenode.org#ds-dev"
