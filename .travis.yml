@@ -8,8 +8,5 @@ branches:
 
 before_script: "npm install --dev"
 
-script: 
-    - "make test"
-
 notifications:
   irc: "irc.freenode.org#ds-dev"
