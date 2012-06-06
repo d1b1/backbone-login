@@ -1,7 +1,12 @@
 language: node_js
  node_js:
    - 0.6
+
 branches:
   only:
     - master
+
 before_script: "npm install --dev"
+
+script: 
+    - "make test"
