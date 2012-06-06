@@ -1,12 +1,16 @@
 language: node_js
+
 node_js:
   - 0.6
+
 before_script:
   - "export DISPLAY=:99.0" 
   - "sh -e /etc/init.d/xvfb start"
   - npm install connect
   - sudo node test/js/server.js &
   - sleep 5
-script: phantomjs test/qunit/run-qunit.js "http://localhost:80/test/index.html"
+
+script: phantomjs test/qunit/run-qunit.js 'http://localhost:80/test/index.html'
+
 notifications:
-  irc: "irc.freenode.org#d1b1"
+  irc: "irc.freenode.org#ds-dev"
