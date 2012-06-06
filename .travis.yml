@@ -1,13 +1,6 @@
 language: node_js
-
 node_js:
   - 0.6
-
-branches:
-  only:
-    - master
-
-before_script: "npm install --dev"
-
-notifications:
-  irc: "irc.freenode.org#ds-dev"
+before_script:
+  - npm install
+script: jasmine-node api-node/spec
