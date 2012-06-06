@@ -3,4 +3,7 @@
   "version": "0.6.17",
   "dependencies": {
   }
+, "bin"           : "bin/jasmine-node"
+, "main"          : "lib/jasmine-node"
+, "scripts"       : { "test" : "node lib/jasmine-node/cli.js spec" }
 }
